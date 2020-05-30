@@ -1,0 +1,29 @@
+.card-teem-social-button-list {
+  display: flex;
+}
+
+.card-teem-social-button__link {
+  background-color: #fce38a;
+  display: block;
+  width: 55px;
+  height: 56px;
+  transition-property: color;
+  transition-duration: 0.2s;
+  animation-timing-function: linear;
+  margin-right: 2px;
+  padding-top: 15px;
+  &:hover,
+  &:focus {
+    background-color: $second-decor-color;
+  }
+  &:hover .card-teem-social-button__ico--hover,
+  &:focus .card-teem-social-button__ico--hover {
+    fill: $social-icon-color;
+  }
+}
+
+.card-teem-social-button__ico {
+  width: 26px;
+  height: 22px;
+  fill: $second-decor-color;
+}

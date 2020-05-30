@@ -1,0 +1,14 @@
+.site-logo {
+  align-self: baseline;
+  font-size: 1.875rem;
+  color: $second__font__color;
+  font-weight: 700;
+  line-height: 1.2;
+  transition-property: all;
+  transition-duration: 0.2s;
+  &:hover,
+  &:focus {
+    color: $decor__color;
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,30 @@
+.card-teem__overlay {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  animation-timing-function: linear;
+  transition-duration: 0.2s;
+  transition-property: all;
+  box-shadow: 10px 10px #95e1d3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card-teem__overlay-container {
+  position: relative;
+  margin-bottom: 28px;
+  transition-duration: 0.2s;
+  transition-property: all;
+}

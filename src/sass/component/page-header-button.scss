@@ -1,0 +1,32 @@
+.page-header-button {
+  margin: 0 auto;
+  border: solid 3px rgb(255, 255, 255);
+  background-color: transparent;
+  width: 164px;
+  height: 44px;
+  text-align: center;
+  padding-top: 10px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  &:hover,
+  &:focus {
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
+      inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+      rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+    color: $second-decor-color;
+  }
+  &:hover .page-header-button__link,
+  &:focus .page-header-button__link {
+    color: $second-decor-color;
+  }
+}
+
+.page-header-button__link {
+  font-size: 0.875rem;
+  color: $second__font__color;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition-property: all;
+  transition-duration: 0.2s;
+}

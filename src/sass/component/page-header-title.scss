@@ -1,0 +1,19 @@
+.page-header-title {
+  font-size: 9.375rem;
+  color: $second__font__color;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-align: center;
+  margin: 0 auto 120px;
+}
+.page-header-title__item {
+  display: block;
+}
+.page-header-title__item--decorline {
+  font-family: $deco__font;
+  font-size: 4.5rem;
+  text-transform: none;
+  margin-bottom: 50px;
+  font-weight: 400;
+}

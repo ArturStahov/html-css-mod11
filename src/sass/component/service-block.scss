@@ -1,0 +1,48 @@
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service-item {
+  flex-basis: 383px;
+  padding-left: 65px;
+  background-repeat: no-repeat;
+  &:nth-child(-n + 3) {
+    margin-bottom: 100px;
+  }
+}
+
+.service-item__ico {
+  background-repeat: no-repeat;
+}
+.service-item__title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.service-item__description {
+  font-size: 0.9375rem;
+  font-family: var(--second__font);
+  line-height: 1.6;
+  color: $descriptions__font__color;
+}
+.service-item__ico--photography_ico {
+  background-image: url('../images/svg/servise_ico/alarm-ico.svg');
+}
+.service-item__ico--design_ico {
+  background-image: url('../images/svg/servise_ico/graph-ico.svg');
+}
+.service-item__ico--creativity_ico {
+  background-image: url('../images/svg/servise_ico/tw-ico.svg');
+}
+.service-item__ico--seo_ico {
+  background-image: url('../images/svg/servise_ico/book-ico.svg');
+}
+.service-item__ico--css_ico {
+  background-image: url('../images/svg/servise_ico/home-ico.svg');
+}
+.service-item__ico--digital_ico {
+  background-image: url('../images/svg/servise_ico/digital-ico.svg');
+}

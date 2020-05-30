@@ -1,0 +1,33 @@
+.site-user-interaction {
+  display: flex;
+  align-self: baseline;
+  align-self: baseline;
+}
+.site-user-interaction__ico {
+  fill: $social-icon-color;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.site-user-interaction__button--hover {
+  transition-property: all;
+  transition-duration: 0.2s;
+  &:hover .site-user-interaction__ico,
+  &:focus .site-user-interaction__ico {
+    fill: $decor__color;
+    transform: scale(1.5);
+  }
+}
+
+.site-user-interaction__button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.site-user-interaction__button:not(:last-child) {
+  margin-right: 35px;
+}
+.site-user-interaction__ico {
+  width: 18px;
+  height: 18px;
+}

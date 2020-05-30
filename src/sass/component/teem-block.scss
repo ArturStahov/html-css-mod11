@@ -1,0 +1,47 @@
+.page-section-team-before-text::before {
+  content: var(--section_teem-before-text);
+}
+
+.page-section-title__section-teem--mr {
+  margin-bottom: 40px;
+}
+
+.card-teem-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-teem {
+  text-align: center;
+  flex-basis: 381px;
+  &:hover .card-teem__overlay,
+  &:focus .card-teem__overlay {
+    transform: translate(-10px, -10px);
+    overflow: visible;
+    opacity: 1;
+  }
+  &:hover .card-teem__overlay-container,
+  &:focus .card-teem__overlay-container {
+    transform: translate(-10px, -10px);
+  }
+
+  &:not(:last-child) {
+    margin-right: 29px;
+  }
+}
+
+.card-teem-title {
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  color: $first__font__color;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.card-teem-description {
+  font-size: 0.9375rem;
+  font-family: var(--second__font);
+  color: $descriptions__font__color;
+  font-style: italic;
+  line-height: 1.6;
+}
