@@ -9,12 +9,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://arturstahov.github.io/html-css-mod11",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    "url": "git+https://github.com/ArturStahov/html-css-mod11.git"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Artur Stahov <vtemy.at.ua@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
@@ -32,6 +32,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-cache-bust": "^1.4.1",
     "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.2.2",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
