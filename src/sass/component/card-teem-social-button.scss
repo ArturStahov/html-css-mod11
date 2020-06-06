@@ -17,8 +17,8 @@
     &:focus {
       background-color: $second-decor-color;
     }
-    &:hover .card-teem-social-button__ico--hover,
-    &:focus .card-teem-social-button__ico--hover {
+    &:hover .social-button__ico--hover,
+    &:focus .social-button__ico--hover {
       fill: $social-icon-color;
     }
   }
