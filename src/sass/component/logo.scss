@@ -1,9 +1,6 @@
 .site-logo {
   align-self: baseline;
-  font-size: 1.875rem;
-  color: $second__font__color;
-  font-weight: 700;
-  line-height: 1.2;
+  @include font-settings(1.875rem, 1.2, 700, $second__font__color);
   transition-property: all;
   transition-duration: 0.2s;
   &:hover,

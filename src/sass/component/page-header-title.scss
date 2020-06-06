@@ -1,19 +1,15 @@
 .page-header-title {
-  font-size: 9.375rem;
-  color: $second__font__color;
-  font-weight: 700;
+  @include font-settings(9.375rem, 0.9, 700, $second__font__color);
   text-transform: uppercase;
-  line-height: 0.9;
   text-align: center;
   margin: 0 auto 120px;
-}
-.page-header-title__item {
-  display: block;
-}
-.page-header-title__item--decorline {
-  font-family: $deco__font;
-  font-size: 4.5rem;
-  text-transform: none;
-  margin-bottom: 50px;
-  font-weight: 400;
+  &__item {
+    display: block;
+  }
+  &__item--decorline {
+    @include font-settings(4.5rem, 1.2, 400, $first__font__color);
+    font-family: $deco__font;
+    text-transform: none;
+    margin-bottom: 50px;
+  }
 }

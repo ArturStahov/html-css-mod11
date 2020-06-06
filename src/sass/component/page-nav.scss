@@ -9,39 +9,37 @@
   align-self: baseline;
   display: flex;
   justify-content: space-between;
-}
 
-.site-navigation__item {
-  &:after {
-    content: '';
-    border-bottom: $decor__color solid 4px;
-    display: block;
-    overflow: hidden;
-    opacity: 0;
-    animation-timing-function: linear;
-    animation: 0.2s line_scale_anim_befo;
+  &__item {
+    &:after {
+      content: '';
+      border-bottom: $decor__color solid 4px;
+      display: block;
+      overflow: hidden;
+      opacity: 0;
+      animation-timing-function: linear;
+      animation: 0.2s line_scale_anim_befo;
+    }
+    &:hover.site-navigation__item::after,
+    &:focus.site-navigation__item::after {
+      overflow: visible;
+      opacity: 1;
+      animation-timing-function: linear;
+      animation: 0.2s line_scale_anim;
+    }
+    &:hover .site-navigation__link,
+    &:focus .site-navigation__link {
+      color: $decor__color;
+    }
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
-  &:hover.site-navigation__item::after,
-  &:focus.site-navigation__item::after {
-    overflow: visible;
-    opacity: 1;
-    animation-timing-function: linear;
-    animation: 0.2s line_scale_anim;
-  }
-  &:hover .site-navigation__link,
-  &:focus .site-navigation__link {
-    color: $decor__color;
-  }
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 
-.site-navigation__link {
-  font-size: 0.875rem;
-  color: $second__font__color;
-  text-transform: uppercase;
-  line-height: 1.2;
-  transition-property: color;
-  transition-delay: 0.2s;
+  &__link {
+    @include font-settings(0.875rem, 1.2, 400, $second__font__color);
+    text-transform: uppercase;
+    transition-property: color;
+    transition-delay: 0.2s;
+  }
 }

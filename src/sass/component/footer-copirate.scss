@@ -3,9 +3,7 @@
   align-self: center;
 }
 .footer-copyright__paragraf {
-  font-size: 0.875rem;
-  color: $first__font__color;
-  line-height: 1.2;
+  @include font-settings(0.875rem, 1.2, 400, $first__font__color);
 }
 
 .footer-copyright__link {

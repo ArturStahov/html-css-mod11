@@ -24,20 +24,16 @@
   &:not(:last-child) {
     margin-right: 29px;
   }
-}
 
-.card-teem-title {
-  margin-bottom: 10px;
-  font-size: 0.875rem;
-  color: $first__font__color;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
+  &-title {
+    @include font-settings(0.875rem, 1.2, 400, $first__font__color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
 
-.card-teem-description {
-  font-size: 0.9375rem;
-  font-family: var(--second__font);
-  color: $descriptions__font__color;
-  font-style: italic;
-  line-height: 1.6;
+  &-description {
+    @include font-settings(0.9375rem, 1.6, 400, $descriptions__font__color);
+    font-family: var(--second__font);
+    font-style: italic;
+  }
 }

@@ -1,7 +1,5 @@
 .page-section__heading_paragraf {
+  @include font-settings(0.9375rem, 1.6, 400, $descriptions__font__color);
   text-align: center;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  color: $descriptions__font__color;
   margin-bottom: 90px;
 }
